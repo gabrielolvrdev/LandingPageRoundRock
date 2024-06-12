@@ -81,6 +81,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 22px; /* 122.222% */
+  border: 1px solid white;
 }
 
 .contentCards {
@@ -168,4 +169,64 @@
   font-style: normal;
   font-weight: 600;
   line-height: 22px; /* 157.143% */
+}
+
+.contentService {
+  background-color: $blue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 390px;
+  width: 100%;
+}
+
+.serviceText {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.serviceText2 {
+  height: 284px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+}
+
+.CardTextService {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textLorem {
+  color: $blue;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 122.222% */
+}
+
+.subTextLorem {
+  color: #19435a;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+.sectionService {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.testymonials {
 }

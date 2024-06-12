@@ -61,4 +61,37 @@ import './Home.scss'
       </div>
     </div>
   </section>
+  <section class="sectionService">
+    <div class="contentService">
+      <p class="serviceText">Services</p>
+      <div class="contentCards">
+        <div class="cardContent"></div>
+        <div class="cardContent"></div>
+        <div class="cardContent"></div>
+        <div class="cardContent"></div>
+      </div>
+    </div>
+    <div class="serviceText2">
+      <div class="CardTextService">
+        <p class="textLorem">Lorem Ipsum</p>
+        <p class="subTextLorem">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      </div>
+      <div class="CardTextService">
+        <p class="textLorem">Lorem Ipsum</p>
+        <p class="subTextLorem">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      </div>
+      <div class="CardTextService">
+        <p class="textLorem">Lorem Ipsum</p>
+        <p class="subTextLorem">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      </div>
+      <div class="CardTextService">
+        <p class="textLorem">Lorem Ipsum</p>
+        <p class="subTextLorem">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+      </div>
+    </div>
+    <ButtonComponent class="buttonContentPrimary"> Help Me</ButtonComponent>
+  </section>
+  <section class="testymonials">
+    <div>teste</div>
+  </section>
 </template>
