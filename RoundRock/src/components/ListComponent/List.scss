@@ -1,0 +1,9 @@
+@import '../../assets/main/main.scss';
+
+.listContent {
+  list-style-type: none;
+}
+.listCheck {
+  display: flex;
+  gap: 8px;
+}

@@ -1,0 +1,9 @@
+@import '../../assets/main/main.scss';
+
+.button {
+  border-radius: 10px;
+  background-color: $blue;
+  border: none;
+  min-width: 192px;
+  height: 62px;
+}
