@@ -1,0 +1,37 @@
+@import '../../assets/main/main.scss';
+
+.contentCard {
+  background-color: white;
+  border-radius: 40px;
+  object-fit: cover;
+  padding: 15px;
+  display: flex;
+  gap: 5px;
+}
+
+.textCardEllipse {
+  color: #50b2ea;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.cardContentWhere {
+  display: flex;
+  flex-direction: column;
+}
+.contentStar {
+  gap: 4px;
+  display: flex;
+}
+
+.textParagraphEllipse {
+  color: #19435a;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}

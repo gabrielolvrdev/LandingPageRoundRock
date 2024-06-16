@@ -1,13 +1,16 @@
 @import '../../assets/main/main.scss';
 
-.contentPrimary {
+.contentRoundRock {
   background-image: url(../../assets/img/roundRock.png);
   height: 100vh;
   width: 100%;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contentHome {
+.contentHomeRoundRock {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,18 +19,19 @@
   gap: 20px;
 }
 
-.titleContent {
+.titleContentRoundRock {
   display: flex;
   gap: 14px;
+  padding-bottom: 80px;
 }
 
-.textHome {
+.contentTextHome {
   display: flex;
   flex-direction: column;
 }
 
-.text0 {
-  color: #fff;
+.subtitleRoundRock {
+  color: $white;
   font-family: Poppins;
   font-size: 32px;
   font-style: normal;
@@ -38,91 +42,114 @@
   margin: 0;
 }
 
-.text1 {
-  color: #fff;
+.textRoundRock {
+  color: $white;
   font-family: Poppins;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 104.5%; /* 50.16px */
+  line-height: 104.5%;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
 
-.text2 {
-  color: #fff;
+.textParagraphRound {
+  color: $white;
   text-align: center;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
 }
 
-.text3 {
-  color: #fff;
+.textTitleRoundRock {
+  color: $white;
   text-align: center;
   font-family: Poppins;
   font-size: 48px;
   font-style: normal;
   font-weight: 800;
-  line-height: 118.5%; /* 56.88px */
+  line-height: 118.5%;
+  padding: 0;
+  margin: 0;
 }
-.contentText2 {
+.contentParagraphRound {
   width: 520px;
 }
 
-.buttonContentPrimary {
-  color: #fff;
+.buttonHelpMe {
+  color: $white;
   text-align: center;
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 22px; /* 122.222% */
-  border: 1px solid white;
+  line-height: 22px;
+  border: 1px solid $white;
 }
 
-.contentCards {
+.contentCardsServices {
   display: flex;
-  justify-content: space-around;
-  gap: 50px;
+  justify-content: space-between;
+  gap: 80px;
   width: 520px;
 }
 
-.cardContent {
-  border: 1px solid white;
+.contentCardsServicesWork {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  width: 520px;
+}
+
+.cardService {
+  border: 2px solid $white;
   width: 72.125px;
   height: 72.125px;
   transform: rotate(-45deg);
   flex-shrink: 0;
-  border-radius: 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.contentButtonPrimary {
+.cardService1 {
+  border: 2px solid $white;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-45deg);
+  flex-shrink: 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentButtonHelpMe {
   padding-top: 40px;
 }
 
-.contentSecondaryService {
+.contentWorkService {
   background-color: $blue;
   height: 100vh;
   width: 100%;
   display: flex;
 }
 
-.contentWhite {
-  background-color: white;
-  width: 1200px;
+.contentCardWhiteWork {
+  background-color: $white;
+  width: 950px;
   display: flex;
   align-items: center;
   justify-content: end;
 }
 
-.contentWork {
-  border: 2px solid white;
+.contentPerson {
+  border: 2px solid $white;
   height: 50px;
-  width: 200px;
   align-items: center;
   height: 510px;
   width: 559px;
@@ -130,8 +157,8 @@
   border-bottom-right-radius: 40px;
 }
 
-.contentWork1 {
-  border: 2px solid white;
+.contentWork {
+  border: 2px solid $white;
   background-color: $blue;
   height: 50px;
   width: 200px;
@@ -147,7 +174,7 @@
   justify-content: center;
 }
 
-.contentPhotoWork {
+.contentPersonWork {
   display: flex;
   align-items: center;
 }
@@ -158,17 +185,17 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
   width: 520px;
 }
 
-.textCheck1 {
-  color: #fff;
+.textCheck {
+  color: $white;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
 }
 
 .contentService {
@@ -179,10 +206,11 @@
   align-items: center;
   height: 390px;
   width: 100%;
+  gap: 40px;
 }
 
 .serviceText {
-  color: #fff;
+  color: $white;
   text-align: center;
   font-family: Poppins;
   font-size: 48px;
@@ -190,43 +218,202 @@
   font-weight: 700;
   line-height: normal;
 }
-.serviceText2 {
-  height: 284px;
+.contentServiceText {
+  height: 204px;
   display: flex;
   gap: 80px;
   justify-content: center;
+  align-items: center;
 }
 
-.CardTextService {
+.cardTextService {
   width: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.textLorem {
+.titleService {
   color: $blue;
   font-family: Poppins;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 22px; /* 122.222% */
+  line-height: 22px;
 }
 
-.subTextLorem {
+.subtitleService {
   color: #19435a;
   text-align: center;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
+  line-height: 22px;
 }
 .sectionService {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding-bottom: 40px;
 }
 
-.testymonials {
+.sectionTestymonials {
+  background-color: $blue;
+  height: 718px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contentCardsTestymonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1000px;
+  gap: 20px;
+}
+
+.imageWrench {
+  width: 39px;
+  transform: rotate(40deg);
+}
+
+@media (max-width: 1270px) {
+  .contentPerson {
+    width: 400px;
+  }
+  .imagePerson {
+    width: 400px;
+    height: 510px;
+  }
+}
+
+@media (max-width: 1106px) {
+  .contentPerson {
+    display: none;
+  }
+  .contentWork {
+    width: 100%;
+    border-radius: 40px;
+  }
+  .contentWorkService {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .contentServiceText {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1021px) {
+  .contentCardsTestymonials {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .sectionTestymonials {
+    height: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 698px) {
+  .contentService {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sectionService {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentCardsServicesWork {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 0px;
+  }
+
+  .contentCardsServices {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .contentHomeRoundRock {
+    padding: 0;
+  }
+  .textTitleRoundRock {
+    font-size: 32px;
+  }
+
+  .textParagraphRound {
+    font-size: 12px;
+    width: 100%;
+  }
+  .contentRoundRock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contentParagraphRound {
+    width: 300px;
+  }
+}
+
+@media (max-width: 550px) {
+  .textWork {
+    font-size: 12px;
+    width: 300px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 522px) {
+  .textParagraphRound {
+    width: 100%;
+  }
+  .contentWork {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .titleContentRoundRock {
+    gap: 8px;
+    flex-direction: column;
+    padding-bottom: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imagePlumbers {
+    width: 100px;
+  }
+
+  .contentCardsServices {
+    width: 100px;
+    gap: 40px;
+  }
+
+  .contentHomeRoundRock {
+    width: 100%;
+  }
+
+  .contentParagraphRound {
+    width: 300px;
+  }
 }
